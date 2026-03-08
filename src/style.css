@@ -1895,25 +1895,33 @@ body {
 
     /* ============ MOBILE HERO ============ */
     .hero-section {
-        min-height: 100svh; /* Use svh for better mobile support */
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .webgl-container {
+        position: relative;
+        height: 45vh;
+        min-height: 280px;
+        width: 100%;
+        order: 1;
     }
 
     .hero-overlay {
+        position: relative;
         width: 100%;
-        padding: 0 1rem;
-        background: linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0.95) 0%,
-            rgba(255, 255, 255, 0.85) 70%,
-            transparent 100%
-        );
+        height: auto;
+        padding: 1.5rem 1.25rem 2rem;
+        background: var(--bg-primary);
         align-items: flex-start;
-        padding-top: 80px;
+        order: 2;
+        flex: 1;
     }
 
     .hero-content {
         max-width: 100%;
-        padding-top: 20px;
+        padding-top: 0;
     }
 
     .hero-subtitle {
@@ -1955,23 +1963,41 @@ body {
     }
 
     .hero-stats {
-        left: 1rem;
-        bottom: 2rem;
-        gap: 1rem;
-        width: calc(100% - 2rem);
-        justify-content: space-between;
+        position: relative;
+        left: auto;
+        bottom: auto;
+        gap: 1.5rem;
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
     }
 
     .stat-number {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .stat-label {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .scroll-indicator {
         display: none;
+    }
+
+    .hero-title {
+        font-size: clamp(2rem, 10vw, 3rem);
+        margin-bottom: 0.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+        line-height: 1.6;
     }
 
     /* ============ MOBILE HORIZONTAL SECTION (STACKED) ============ */
@@ -2093,12 +2119,42 @@ body {
     }
 
     .international-gallery {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
     }
 
     .gallery-item {
-        aspect-ratio: 3/4;
+        aspect-ratio: 1/1;
+    }
+
+    .gallery-caption {
+        font-size: 0.7rem;
+        padding: 1rem 0.75rem;
+    }
+
+    .expertise-featured {
+        margin-bottom: 2rem;
+        border-radius: 12px;
+    }
+
+    .expertise-featured img {
+        border-radius: 12px;
+    }
+
+    .social-card.with-image .social-card-image {
+        height: 180px;
+    }
+
+    .social-card-content {
+        padding: 1rem;
+    }
+
+    .social-card h3 {
+        font-size: 1rem;
+    }
+
+    .social-card p {
+        font-size: 0.85rem;
     }
 
     .expertise-card,
