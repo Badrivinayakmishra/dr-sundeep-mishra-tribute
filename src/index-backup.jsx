@@ -490,35 +490,35 @@ function App() {
             <div className="intro-overlay">
                 <div className="intro-content">
                     <h1 className="intro-name">
-                        {'डॉ. सुनदीप मिश्रा'.split('').map((char, i) => (
+                        {'Dr. Sundeep Mishra'.split('').map((char, i) => (
                             <span key={i} className="char" style={{ display: char === ' ' ? 'inline' : 'inline-block' }}>
                                 {char === ' ' ? '\u00A0' : char}
                             </span>
                         ))}
                     </h1>
                     <div className="intro-line"></div>
-                    <p className="intro-title">कुलपति एवं इंटरवेंशनल कार्डियोलॉजिस्ट</p>
+                    <p className="intro-title">Vice-Chancellor & Interventional Cardiologist</p>
                 </div>
             </div>
 
             {/* Transition Curtain */}
             <div className="transition-curtain" ref={curtainRef}>
-                <span className="curtain-text">डॉ. सुनदीप मिश्रा</span>
+                <span className="curtain-text">Dr. Sundeep Mishra</span>
             </div>
 
             {/* Navigation */}
             <nav className="nav-container">
                 <a href="/" className="nav-logo">
-                    <AnimatedText>डॉ. सुनदीप मिश्रा</AnimatedText>
+                    <AnimatedText>Dr. Sundeep Mishra</AnimatedText>
                 </a>
                 <div className="nav-links">
-                    <a href="#about" className="nav-link"><AnimatedText>परिचय</AnimatedText></a>
-                    <a href="#social-services" className="nav-link"><AnimatedText>सामाजिक कार्य</AnimatedText></a>
-                    <a href="#international" className="nav-link"><AnimatedText>अंतर्राष्ट्रीय</AnimatedText></a>
-                    <a href="#achievements" className="nav-link"><AnimatedText>पुरस्कार</AnimatedText></a>
-                    <a href="#contact" className="nav-link"><AnimatedText>संपर्क</AnimatedText></a>
+                    <a href="#about" className="nav-link"><AnimatedText>About</AnimatedText></a>
+                    <a href="#social-services" className="nav-link"><AnimatedText>Social Work</AnimatedText></a>
+                    <a href="#international" className="nav-link"><AnimatedText>International</AnimatedText></a>
+                    <a href="#achievements" className="nav-link"><AnimatedText>Awards</AnimatedText></a>
+                    <a href="#contact" className="nav-link"><AnimatedText>Contact</AnimatedText></a>
                 </div>
-                <a href="#contact" className="nav-cta">अपॉइंटमेंट बुक करें</a>
+                <a href="#contact" className="nav-cta">Book Appointment</a>
             </nav>
 
             {/* HERO SECTION */}
@@ -549,9 +549,10 @@ function App() {
                 {/* Hero Overlay */}
                 <div className="hero-overlay">
                     <div className="hero-content">
-                        <p className="hero-subtitle animate-item">कुलपति, निम्स विश्वविद्यालय एवं निदेशक, निम्स हार्ट एंड ब्रेन हॉस्पिटल</p>
+                        <p className="hero-subtitle animate-item">Vice-Chancellor, NIMS University & Director, NIMS Heart & Brain Hospital</p>
                         <h1 className="hero-title">
-                            <span className="title-line animate-item">डॉ. सुनदीप मिश्रा</span>
+                            <span className="title-line animate-item">Prof. (Dr.) Sundeep</span>
+                            <span className="title-line highlight animate-item">Mishra</span>
                         </h1>
                         <div className="hero-credentials animate-item">
                             <span className="credential-badge">MBBS, MD, DM (AIIMS)</span>
@@ -560,19 +561,19 @@ function App() {
                             <span className="credential-badge">FSCAI</span>
                         </div>
                         <p className="hero-description animate-item">
-                            32 वर्षों से अधिक के क्लिनिकल अनुभव के साथ भारत के शीर्ष इंटरवेंशनल कार्डियोलॉजिस्ट में से एक।
-                            भारत में वर्चुअल हिस्टोलॉजी प्रक्रियाएं करने वाले पहले चिकित्सक।
-                            इंडियन हार्ट जर्नल के मुख्य संपादक।
+                            One of India's top interventional cardiologists with over 32 years
+                            of clinical experience. First to perform Virtual Histology procedures
+                            in India. Editor-in-Chief, Indian Heart Journal.
                         </p>
                         <div className="hero-cta animate-item">
                             <a href="#contact" className="btn btn-primary magnetic-btn">
-                                <span>अपॉइंटमेंट बुक करें</span>
+                                <span>Book Appointment</span>
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                     <path d="M5 12h14M12 5l7 7-7 7"/>
                                 </svg>
                             </a>
                             <a href="#about" className="btn btn-secondary magnetic-btn">
-                                <span>और जानें</span>
+                                <span>Learn More</span>
                             </a>
                         </div>
                     </div>
@@ -582,21 +583,21 @@ function App() {
                 <div className="hero-stats">
                     <div className="stat-item">
                         <div className="stat-number"><span className="counter" data-target="32">32</span>+</div>
-                        <div className="stat-label">वर्षों का अनुभव</div>
+                        <div className="stat-label">Years Experience</div>
                     </div>
                     <div className="stat-item">
                         <div className="stat-number"><span className="counter" data-target="200">200</span>+</div>
-                        <div className="stat-label">प्रकाशन</div>
+                        <div className="stat-label">Publications</div>
                     </div>
                     <div className="stat-item">
                         <div className="stat-number"><span className="counter" data-target="50">50</span>K+</div>
-                        <div className="stat-label">प्रक्रियाएं</div>
+                        <div className="stat-label">Procedures</div>
                     </div>
                 </div>
 
                 {/* Scroll Indicator */}
                 <div className="scroll-indicator">
-                    <span className="scroll-text">स्क्रॉल करें</span>
+                    <span className="scroll-text">Scroll</span>
                     <div className="scroll-line"></div>
                 </div>
             </section>
@@ -606,20 +607,22 @@ function App() {
                 <div className="section-container">
                     <div className="about-grid">
                         <div className="about-content">
-                            <p className="section-label animate-item">परिचय</p>
+                            <p className="section-label animate-item">About</p>
                             <h2 className="section-title animate-item">
-                                उत्कृष्टता की<br />
-                                <span className="highlight">विरासत</span>
+                                A Legacy of<br />
+                                <span className="highlight">Excellence</span>
                             </h2>
                             <p className="about-text animate-item">
-                                प्रो. (डॉ.) सुनदीप मिश्रा निम्स विश्वविद्यालय राजस्थान जयपुर के कुलपति और अध्यक्ष
-                                तथा निम्स हार्ट एंड ब्रेन हॉस्पिटल के निदेशक के रूप में कार्यरत हैं। 32 वर्षों से अधिक
-                                के क्लिनिकल अनुभव के साथ भारत के शीर्ष इंटरवेंशनल कार्डियोलॉजिस्ट में से एक के रूप में मान्यता प्राप्त।
+                                Prof. (Dr.) Sundeep Mishra serves as Vice-Chancellor and President
+                                of NIMS University Rajasthan Jaipur, and Director of NIMS Heart &
+                                Brain Hospital. Recognized as one of India's top interventional
+                                cardiologists with over 32 years of clinical experience.
                             </p>
                             <p className="about-text animate-item">
-                                वे भारत में वर्चुअल हिस्टोलॉजी प्रक्रियाएं करने वाले पहले चिकित्सक थे।
-                                इंडियन हार्ट जर्नल के मुख्य संपादक और नेशनल इंटरवेंशन काउंसिल के अध्यक्ष के रूप में,
-                                वे राष्ट्रीय और अंतर्राष्ट्रीय स्तर पर कार्डियक केयर को आकार देना जारी रखते हैं।
+                                He was the first to perform Virtual Histology procedures in India.
+                                As Editor-in-Chief of Indian Heart Journal and Chairman of National
+                                Intervention Council, he continues to shape cardiac care nationally
+                                and internationally.
                             </p>
                             <div className="about-highlights">
                                 <div className="highlight-item animate-item">
@@ -629,7 +632,7 @@ function App() {
                                             <polyline points="22 4 12 14.01 9 11.01"/>
                                         </svg>
                                     </div>
-                                    <span>DM कार्डियोलॉजी - एम्स नई दिल्ली</span>
+                                    <span>DM Cardiology - AIIMS New Delhi</span>
                                 </div>
                                 <div className="highlight-item animate-item">
                                     <div className="highlight-icon">
@@ -638,7 +641,7 @@ function App() {
                                             <polyline points="22 4 12 14.01 9 11.01"/>
                                         </svg>
                                     </div>
-                                    <span>फेलोशिप - वाशिंगटन हॉस्पिटल सेंटर, USA</span>
+                                    <span>Fellowship - Washington Hospital Center, USA</span>
                                 </div>
                                 <div className="highlight-item animate-item">
                                     <div className="highlight-icon">
@@ -647,14 +650,14 @@ function App() {
                                             <polyline points="22 4 12 14.01 9 11.01"/>
                                         </svg>
                                     </div>
-                                    <span>बोर्ड ऑफ ट्रस्टीज - SCAI, USA</span>
+                                    <span>Board of Trustees - SCAI, USA</span>
                                 </div>
                             </div>
                         </div>
                         <div className="about-image animate-item">
                             <RevealImage
                                 src="./images/doctor-about.png"
-                                alt="डॉ. सुनदीप मिश्रा"
+                                alt="Dr. Sundeep Mishra"
                             />
                         </div>
                     </div>
@@ -668,43 +671,43 @@ function App() {
                         <div className="horizontal-panel panel-intro">
                             <div className="panel-content">
                                 <span className="panel-number">01 / 03</span>
-                                <h2 className="panel-title">उत्कृष्टता की<br/>यात्रा</h2>
+                                <h2 className="panel-title">A Journey of<br/>Excellence</h2>
                                 <p className="panel-text">
-                                    एम्स नई दिल्ली से वाशिंगटन हॉस्पिटल सेंटर तक,
-                                    जीवन बचाने और विश्व स्तर पर कार्डियक केयर को
-                                    आगे बढ़ाने के लिए समर्पित करियर।
+                                    From AIIMS New Delhi to Washington Hospital Center,
+                                    a career dedicated to saving lives and advancing
+                                    cardiac care globally.
                                 </p>
                             </div>
                             <div className="panel-visual panel-image">
-                                <img src="./images/journey-casual.png" alt="डॉ. मिश्रा - उत्कृष्टता की यात्रा" />
+                                <img src="./images/journey-casual.png" alt="Dr. Mishra - A Journey of Excellence" />
                             </div>
                         </div>
                         <div className="horizontal-panel panel-accent">
                             <div className="panel-content">
                                 <span className="panel-number">02 / 03</span>
-                                <h2 className="panel-title">भारत में<br/>प्रथम</h2>
+                                <h2 className="panel-title">First in<br/>India</h2>
                                 <p className="panel-text">
-                                    वर्चुअल हिस्टोलॉजी प्रक्रियाओं में अग्रणी।
-                                    नवीन तकनीकों और रोगी देखभाल के साथ
-                                    इंटरवेंशनल कार्डियोलॉजी में नए मानक स्थापित।
+                                    Pioneer in Virtual Histology procedures. Setting new
+                                    standards in interventional cardiology with innovative
+                                    techniques and patient care.
                                 </p>
                             </div>
                             <div className="panel-visual panel-image">
-                                <img src="./images/first-india-cathlab.png" alt="डॉ. मिश्रा कार्डियक प्रक्रिया करते हुए" />
+                                <img src="./images/first-india-cathlab.png" alt="Dr. Mishra performing cardiac procedure" />
                             </div>
                         </div>
                         <div className="horizontal-panel">
                             <div className="panel-content">
                                 <span className="panel-number">03 / 03</span>
-                                <h2 className="panel-title">वैश्विक<br/>नेतृत्व</h2>
+                                <h2 className="panel-title">Global<br/>Leadership</h2>
                                 <p className="panel-text">
-                                    SCAI USA में बोर्ड ऑफ ट्रस्टीज।
-                                    इंडियन हार्ट जर्नल के मुख्य संपादक।
-                                    विश्वभर में कार्डियोलॉजी के भविष्य को आकार देना।
+                                    Board of Trustees at SCAI USA. Editor-in-Chief,
+                                    Indian Heart Journal. Shaping the future of
+                                    cardiology worldwide.
                                 </p>
                             </div>
                             <div className="panel-visual panel-image">
-                                <img src="./images/global-leadership.png" alt="डॉ. मिश्रा अंतर्राष्ट्रीय सम्मेलन में" />
+                                <img src="./images/global-leadership.png" alt="Dr. Mishra at international conference" />
                             </div>
                         </div>
                     </div>
@@ -715,36 +718,36 @@ function App() {
             <section className="education-section animate-section" id="education">
                 <div className="section-container">
                     <div className="section-header">
-                        <p className="section-label animate-item">योग्यता</p>
+                        <p className="section-label animate-item">Credentials</p>
                         <h2 className="section-title animate-item">
-                            शिक्षा एवं<br />
-                            <span className="highlight">प्रशिक्षण</span>
+                            Education &<br />
+                            <span className="highlight">Training</span>
                         </h2>
                     </div>
                     <div className="education-grid">
                         <div className="education-card animate-item">
                             <div className="edu-year">MBBS</div>
-                            <h3>SMS मेडिकल कॉलेज</h3>
-                            <p>जयपुर, राजस्थान</p>
+                            <h3>SMS Medical College</h3>
+                            <p>Jaipur, Rajasthan</p>
                         </div>
                         <div className="education-card animate-item">
                             <div className="edu-year">MD</div>
-                            <h3>दिल्ली विश्वविद्यालय</h3>
-                            <p>चिकित्सा</p>
+                            <h3>University of Delhi</h3>
+                            <p>Medicine</p>
                         </div>
                         <div className="education-card animate-item">
                             <div className="edu-year">DM</div>
-                            <h3>एम्स, नई दिल्ली</h3>
-                            <p>कार्डियोलॉजी</p>
+                            <h3>AIIMS, New Delhi</h3>
+                            <p>Cardiology</p>
                         </div>
                         <div className="education-card animate-item">
-                            <div className="edu-year">फेलोशिप</div>
-                            <h3>वाशिंगटन हॉस्पिटल सेंटर</h3>
-                            <p>इंटरवेंशनल कार्डियोलॉजी, USA</p>
+                            <div className="edu-year">Fellowship</div>
+                            <h3>Washington Hospital Center</h3>
+                            <p>Interventional Cardiology, USA</p>
                         </div>
                     </div>
                     <div className="education-featured animate-item">
-                        <img src="./images/education-interview.png" alt="डॉ. मिश्रा - हेल्थ वर्ल्ड इंटरव्यू" />
+                        <img src="./images/education-interview.png" alt="Dr. Mishra - Health World Interview" />
                     </div>
                 </div>
             </section>
@@ -753,46 +756,46 @@ function App() {
             <section className="leadership-section animate-section">
                 <div className="section-container">
                     <div className="section-header">
-                        <p className="section-label animate-item">नेतृत्व</p>
+                        <p className="section-label animate-item">Leadership</p>
                         <h2 className="section-title animate-item">
-                            व्यावसायिक<br />
-                            <span className="highlight">भूमिकाएं</span>
+                            Professional<br />
+                            <span className="highlight">Roles</span>
                         </h2>
                     </div>
                     <div className="leadership-grid">
                         <div className="leadership-card animate-item">
                             <span className="role-number">01</span>
-                            <h3>कुलपति एवं अध्यक्ष</h3>
-                            <p>निम्स विश्वविद्यालय राजस्थान, जयपुर</p>
+                            <h3>Vice-Chancellor & President</h3>
+                            <p>NIMS University Rajasthan, Jaipur</p>
                         </div>
                         <div className="leadership-card animate-item">
                             <span className="role-number">02</span>
-                            <h3>मुख्य संपादक</h3>
-                            <p>इंडियन हार्ट जर्नल</p>
+                            <h3>Editor-in-Chief</h3>
+                            <p>Indian Heart Journal</p>
                         </div>
                         <div className="leadership-card animate-item">
                             <span className="role-number">03</span>
-                            <h3>अध्यक्ष</h3>
-                            <p>नेशनल इंटरवेंशन काउंसिल, भारत</p>
+                            <h3>Chairman</h3>
+                            <p>National Intervention Council, India</p>
                         </div>
                         <div className="leadership-card animate-item">
                             <span className="role-number">04</span>
-                            <h3>बोर्ड ऑफ ट्रस्टीज</h3>
+                            <h3>Board of Trustees</h3>
                             <p>SCAI, USA</p>
                         </div>
                         <div className="leadership-card animate-item">
                             <span className="role-number">05</span>
-                            <h3>कोर्स डायरेक्टर</h3>
-                            <p>TCT India और श्रीलंका इंटरवेंशनल मीटिंग</p>
+                            <h3>Course Director</h3>
+                            <p>TCT India & Sri Lanka Interventional Meeting</p>
                         </div>
                         <div className="leadership-card animate-item">
                             <span className="role-number">06</span>
-                            <h3>अंतर्राष्ट्रीय संपादक</h3>
-                            <p>श्रीलंका जर्नल ऑफ कार्डियोलॉजी</p>
+                            <h3>International Editor</h3>
+                            <p>Sri Lanka Journal of Cardiology</p>
                         </div>
                     </div>
                     <div className="leadership-featured animate-item">
-                        <img src="./images/leadership-roles.png" alt="डॉ. मिश्रा - अंतर्राष्ट्रीय नेतृत्व" />
+                        <img src="./images/leadership-roles.png" alt="Dr. Mishra - International Leadership" />
                     </div>
                 </div>
             </section>
@@ -801,14 +804,14 @@ function App() {
             <section className="expertise-section animate-section" id="expertise">
                 <div className="section-container">
                     <div className="section-header">
-                        <p className="section-label animate-item">विशेषज्ञता</p>
+                        <p className="section-label animate-item">Expertise</p>
                         <h2 className="section-title animate-item">
-                            विशेषज्ञता के<br />
-                            <span className="highlight">क्षेत्र</span>
+                            Areas of<br />
+                            <span className="highlight">Specialization</span>
                         </h2>
                     </div>
                     <div className="expertise-featured animate-item">
-                        <img src="./images/specialization-procedure.png" alt="डॉ. मिश्रा विशेष कार्डियक प्रक्रिया करते हुए" />
+                        <img src="./images/specialization-procedure.png" alt="Dr. Mishra performing specialized cardiac procedure" />
                     </div>
                     <div className="expertise-grid">
                         <div className="expertise-card animate-item">
@@ -817,8 +820,8 @@ function App() {
                                     <path d="M19.5 12.572l-7.5 7.428-7.5-7.428A5 5 0 1 1 12 5.006a5 5 0 1 1 7.5 7.566z"/>
                                 </svg>
                             </div>
-                            <h3>इंटरवेंशनल कार्डियोलॉजी</h3>
-                            <p>अत्याधुनिक तकनीकों के साथ जटिल कोरोनरी इंटरवेंशन, एंजियोप्लास्टी और स्टेंटिंग प्रक्रियाएं।</p>
+                            <h3>Interventional Cardiology</h3>
+                            <p>Complex coronary interventions, angioplasty, and stenting procedures with cutting-edge techniques.</p>
                         </div>
                         <div className="expertise-card animate-item">
                             <div className="card-icon">
@@ -827,8 +830,8 @@ function App() {
                                     <path d="M12 6v6l4 2"/>
                                 </svg>
                             </div>
-                            <h3>प्रिवेंटिव कार्डियोलॉजी</h3>
-                            <p>व्यापक हृदय रोग रोकथाम कार्यक्रम और जोखिम कारक प्रबंधन।</p>
+                            <h3>Preventive Cardiology</h3>
+                            <p>Comprehensive heart disease prevention programs and risk factor management.</p>
                         </div>
                         <div className="expertise-card animate-item">
                             <div className="card-icon">
@@ -836,8 +839,8 @@ function App() {
                                     <path d="M4.5 12.75l6 6 9-13.5"/>
                                 </svg>
                             </div>
-                            <h3>कार्डियक इमेजिंग</h3>
-                            <p>उन्नत इकोकार्डियोग्राफी, CT एंजियोग्राफी और डायग्नोस्टिक कार्डियक प्रक्रियाएं।</p>
+                            <h3>Cardiac Imaging</h3>
+                            <p>Advanced echocardiography, CT angiography, and diagnostic cardiac procedures.</p>
                         </div>
                         <div className="expertise-card animate-item">
                             <div className="card-icon">
@@ -847,8 +850,8 @@ function App() {
                                     <path d="M12 14v7"/>
                                 </svg>
                             </div>
-                            <h3>चिकित्सा शिक्षा</h3>
-                            <p>भविष्य के कार्डियोलॉजिस्ट को प्रशिक्षित करना और चिकित्सा पाठ्यक्रम विकास का नेतृत्व करना।</p>
+                            <h3>Medical Education</h3>
+                            <p>Training future cardiologists and leading medical curriculum development.</p>
                         </div>
                     </div>
                 </div>
@@ -858,29 +861,29 @@ function App() {
             <section className="social-section animate-section" id="social-services">
                 <div className="section-container">
                     <div className="section-header">
-                        <p className="section-label animate-item">मानवतावादी</p>
+                        <p className="section-label animate-item">Humanitarian</p>
                         <h2 className="section-title animate-item">
-                            सामाजिक<br />
-                            <span className="highlight">सेवाएं</span>
+                            Social<br />
+                            <span className="highlight">Services</span>
                         </h2>
                     </div>
                     <div className="social-grid">
                         <div className="social-card with-image large animate-item">
                             <div className="social-card-image">
-                                <img src="./images/social-ladakh.png" alt="डॉ. मिश्रा लद्दाख में बौद्ध भिक्षु के साथ" />
+                                <img src="./images/social-ladakh.png" alt="Dr. Mishra in Ladakh with Buddhist monk" />
                             </div>
                             <div className="social-card-content">
-                                <h3>लद्दाख हार्ट फाउंडेशन</h3>
-                                <p>दुर्गम ऊंचाई वाले समुदायों को कार्डियक केयर प्रदान किया। लेह, लद्दाख में 11,400 फीट की ऊंचाई पर कार्डियक सर्जरी सफलतापूर्वक की - उच्च ऊंचाई वाली कार्डियक प्रक्रियाओं में अग्रणी।</p>
+                                <h3>Ladakh Heart Foundation</h3>
+                                <p>Delivered cardiac care to isolated high-altitude communities. Successfully performed cardiac surgeries at 11,400 feet elevation in Leh, Ladakh - pioneering high-altitude cardiac procedures.</p>
                             </div>
                         </div>
                         <div className="social-card with-image animate-item">
                             <div className="social-card-image">
-                                <img src="./images/social-surgery.png" alt="डॉ. मिश्रा सर्जरी करते हुए" />
+                                <img src="./images/social-surgery.png" alt="Dr. Mishra performing surgery" />
                             </div>
                             <div className="social-card-content">
-                                <h3>नेपाल कैथ लैब</h3>
-                                <p>शहीद गंगा राम हॉस्पिटल में नेपाल के सार्वजनिक क्षेत्र में पहली कैथेटेराइजेशन प्रयोगशाला स्थापित की।</p>
+                                <h3>Nepal Cath Lab</h3>
+                                <p>Established first catheterization laboratory in Nepal's public sector at Shahid Ganga Ram Hospital.</p>
                             </div>
                         </div>
                         <div className="social-card animate-item">
@@ -890,8 +893,8 @@ function App() {
                                     <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                                 </svg>
                             </div>
-                            <h3>कारगिल युद्ध राहत</h3>
-                            <p>कारगिल युद्ध के बाद संघर्ष क्षेत्रों में प्रभावित आबादी को चिकित्सा सहायता प्रदान की।</p>
+                            <h3>Kargil War Relief</h3>
+                            <p>Provided medical assistance to affected populations in conflict zones following the Kargil War.</p>
                         </div>
                         <div className="social-card animate-item">
                             <div className="social-icon">
@@ -901,8 +904,8 @@ function App() {
                                     <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
                                 </svg>
                             </div>
-                            <h3>ग्रामीण आउटरीच</h3>
-                            <p>मथुरा, पटना, बिलासपुर और महासमुंद में कार्डियक केयर का विस्तार, स्वास्थ्य असमानताओं को संबोधित करते हुए।</p>
+                            <h3>Rural Outreach</h3>
+                            <p>Extended cardiac care across Mathura, Patna, Bilaspur, and Mahasamund, addressing health disparities.</p>
                         </div>
                     </div>
                 </div>
@@ -912,59 +915,59 @@ function App() {
             <section className="international-section animate-section" id="international">
                 <div className="section-container">
                     <div className="section-header">
-                        <p className="section-label animate-item">वैश्विक प्रभाव</p>
+                        <p className="section-label animate-item">Global Impact</p>
                         <h2 className="section-title animate-item">
-                            अंतर्राष्ट्रीय<br />
-                            <span className="highlight">नेतृत्व</span>
+                            International<br />
+                            <span className="highlight">Leadership</span>
                         </h2>
                     </div>
                     <div className="international-gallery animate-item">
                         <div className="gallery-item">
-                            <img src="./images/international-conference.png" alt="डॉ. मिश्रा अंतर्राष्ट्रीय इमेजिंग सम्मेलन में" />
-                            <span className="gallery-caption">इमेजिंग सम्मेलन फैकल्टी</span>
+                            <img src="./images/international-conference.png" alt="Dr. Mishra at international imaging conference" />
+                            <span className="gallery-caption">Imaging Conference Faculty</span>
                         </div>
                         <div className="gallery-item">
-                            <img src="./images/international-faculty.png" alt="डॉ. मिश्रा अंतर्राष्ट्रीय सहकर्मी के साथ" />
-                            <span className="gallery-caption">वैश्विक फैकल्टी एक्सचेंज</span>
+                            <img src="./images/international-faculty.png" alt="Dr. Mishra with international colleague" />
+                            <span className="gallery-caption">Global Faculty Exchange</span>
                         </div>
                         <div className="gallery-item">
-                            <img src="./images/international-nigeria.png" alt="डॉ. मिश्रा नाइजीरिया बिजनेस काउंसिल में" />
-                            <span className="gallery-caption">नाइजीरिया हेल्थकेयर समिट</span>
+                            <img src="./images/international-nigeria.png" alt="Dr. Mishra at Nigeria Business Council" />
+                            <span className="gallery-caption">Nigeria Healthcare Summit</span>
                         </div>
                         <div className="gallery-item">
-                            <img src="./images/leadership-csitv.png" alt="डॉ. मिश्रा CSI TV पर" />
-                            <span className="gallery-caption">CSI TV मेडिकल एजुकेशन</span>
+                            <img src="./images/leadership-csitv.png" alt="Dr. Mishra on CSI TV" />
+                            <span className="gallery-caption">CSI TV Medical Education</span>
                         </div>
                     </div>
                     <div className="international-content">
                         <div className="international-roles animate-item">
-                            <h3>कोर्स डायरेक्टरशिप</h3>
+                            <h3>Course Directorships</h3>
                             <ul>
-                                <li>राष्ट्रीय कोर्स डायरेक्टर - ACC नेशनल टैलेंट हंट प्रोग्राम</li>
-                                <li>कोर्स डायरेक्टर - श्रीलंका इंटरवेंशनल मीटिंग, कोलंबो</li>
-                                <li>सह-कोर्स चेयरमैन - C3 ऑरलैंडो, USA</li>
-                                <li>कोर्स डायरेक्टर - TCT India</li>
-                                <li>सेशन कोऑर्डिनेटर - IAGS 2024</li>
+                                <li>National Course Director - ACC National Talent Hunt Program</li>
+                                <li>Course Director - Sri Lanka Interventional Meeting, Colombo</li>
+                                <li>Co-Course Chairman - C3 Orlando, USA</li>
+                                <li>Course Director - TCT India</li>
+                                <li>Session Coordinator - IAGS 2024</li>
                             </ul>
                         </div>
                         <div className="international-events animate-item">
-                            <h3>वैश्विक सम्मेलन</h3>
+                            <h3>Global Conferences</h3>
                             <div className="event-tags">
-                                <span className="event-tag">EuroPCR पेरिस</span>
-                                <span className="event-tag">SOLACI मेक्सिको</span>
-                                <span className="event-tag">GulfPCR दुबई</span>
-                                <span className="event-tag">TCTAP सियोल</span>
-                                <span className="event-tag">CardioAlex मिस्र</span>
-                                <span className="event-tag">ACC वाशिंगटन</span>
+                                <span className="event-tag">EuroPCR Paris</span>
+                                <span className="event-tag">SOLACI Mexico</span>
+                                <span className="event-tag">GulfPCR Dubai</span>
+                                <span className="event-tag">TCTAP Seoul</span>
+                                <span className="event-tag">CardioAlex Egypt</span>
+                                <span className="event-tag">ACC Washington</span>
                             </div>
                         </div>
                         <div className="international-trials animate-item">
-                            <h3>क्लिनिकल ट्रायल्स</h3>
+                            <h3>Clinical Trials</h3>
                             <ul>
-                                <li>SPIRIT V - बहुराष्ट्रीय स्टेंट अध्ययन</li>
-                                <li>ATLAS ACS 2 TIMI 51 - एंटीकोगुलेंट रिसर्च</li>
-                                <li>INDICOR Study - ड्रग-इल्यूटिंग बैलून ट्रायल</li>
-                                <li>Terumo e-Monitor - सबसे तेज वैश्विक नामांकन</li>
+                                <li>SPIRIT V - Multinational stent study</li>
+                                <li>ATLAS ACS 2 TIMI 51 - Anticoagulant research</li>
+                                <li>INDICOR Study - Drug-eluting balloon trial</li>
+                                <li>Terumo e-Monitor - Fastest global enrollment</li>
                             </ul>
                         </div>
                     </div>
@@ -975,42 +978,42 @@ function App() {
             <section className="achievements-section animate-section" id="achievements">
                 <div className="section-container">
                     <div className="section-header">
-                        <p className="section-label animate-item">मान्यता</p>
+                        <p className="section-label animate-item">Recognition</p>
                         <h2 className="section-title animate-item">
-                            पुरस्कार एवं<br />
-                            <span className="highlight">उपलब्धियां</span>
+                            Awards &<br />
+                            <span className="highlight">Achievements</span>
                         </h2>
                     </div>
                     <div className="achievements-grid">
                         <div className="achievement-card featured animate-item">
                             <div className="achievement-year">2024</div>
-                            <h3>शिक्षा उत्कृष्टता पुरस्कार</h3>
-                            <p>COER विश्वविद्यालय - चिकित्सा शिक्षा में उत्कृष्ट योगदान के लिए मान्यता।</p>
+                            <h3>Education Excellence Award</h3>
+                            <p>COER University - Recognition for outstanding contribution to medical education.</p>
                         </div>
                         <div className="achievement-card animate-item">
                             <div className="achievement-year">2023</div>
-                            <h3>विशिष्ट पूर्व छात्र पुरस्कार</h3>
-                            <p>SMS मेडिकल कॉलेज, जयपुर - असाधारण करियर उपलब्धियों के लिए सम्मान।</p>
+                            <h3>Distinguished Alumni Award</h3>
+                            <p>SMS Medical College, Jaipur - Honoring exceptional career achievements.</p>
                         </div>
                         <div className="achievement-card animate-item">
                             <div className="achievement-year">2023</div>
-                            <h3>सर्वश्रेष्ठ कुलपति</h3>
-                            <p>Center for Education Growth and Research - नेतृत्व उत्कृष्टता।</p>
+                            <h3>Best Vice Chancellor</h3>
+                            <p>Center for Education Growth and Research - Leadership excellence.</p>
                         </div>
                         <div className="achievement-card animate-item">
                             <div className="achievement-year">2022</div>
-                            <h3>वर्ष के दूरदर्शी नेता</h3>
-                            <p>स्वास्थ्य सेवा और चिकित्सा शिक्षा में असाधारण नेतृत्व के लिए मान्यता।</p>
+                            <h3>Visionary Leader of the Year</h3>
+                            <p>Recognition for exceptional leadership in healthcare and medical education.</p>
                         </div>
                         <div className="achievement-card animate-item">
                             <div className="achievement-year">2016</div>
-                            <h3>सर्वश्रेष्ठ शिक्षाविद् पुरस्कार</h3>
-                            <p>CSI चेन्नई चैप्टर - चिकित्सा शिक्षा में उत्कृष्टता।</p>
+                            <h3>Best Academician Award</h3>
+                            <p>CSI Chennai Chapter - Excellence in medical education.</p>
                         </div>
                         <div className="achievement-card animate-item">
                             <div className="achievement-year">2010</div>
-                            <h3>युवा नेता पुरस्कार</h3>
-                            <p>Cardiovascular Revascularization Therapeutics, वाशिंगटन DC, USA।</p>
+                            <h3>Young Leader Award</h3>
+                            <p>Cardiovascular Revascularization Therapeutics, Washington DC, USA.</p>
                         </div>
                     </div>
                 </div>
@@ -1021,45 +1024,45 @@ function App() {
                 <div className="section-container">
                     <div className="publications-content">
                         <div className="publications-info">
-                            <p className="section-label animate-item">अनुसंधान</p>
+                            <p className="section-label animate-item">Research</p>
                             <h2 className="section-title animate-item">
-                                प्रकाशन एवं<br />
-                                <span className="highlight">शोध</span>
+                                Publications &<br />
+                                <span className="highlight">Research</span>
                             </h2>
                             <p className="publications-text animate-item">
-                                डॉ. मिश्रा ने 500 से अधिक पीयर-रिव्यूड प्रकाशन लिखे हैं,
-                                प्रमुख कार्डियोलॉजी पाठ्यपुस्तकों में योगदान दिया है, और
-                                विश्वभर में प्रतिष्ठित अंतर्राष्ट्रीय सम्मेलनों में प्रस्तुति दी है।
+                                Dr. Mishra has authored over 500 peer-reviewed publications,
+                                contributed to major cardiology textbooks, and presented at
+                                prestigious international conferences worldwide.
                             </p>
                             <div className="publications-stats animate-item">
                                 <div className="pub-stat">
                                     <span className="pub-number"><span className="counter" data-target="500">500</span>+</span>
-                                    <span className="pub-label">प्रकाशन</span>
+                                    <span className="pub-label">Publications</span>
                                 </div>
                                 <div className="pub-stat">
                                     <span className="pub-number"><span className="counter" data-target="50">50</span>+</span>
-                                    <span className="pub-label">पुस्तक अध्याय</span>
+                                    <span className="pub-label">Book Chapters</span>
                                 </div>
                                 <div className="pub-stat">
                                     <span className="pub-number"><span className="counter" data-target="100">100</span>+</span>
-                                    <span className="pub-label">सम्मेलन</span>
+                                    <span className="pub-label">Conferences</span>
                                 </div>
                             </div>
                         </div>
                         <div className="publications-list">
                             <div className="publication-item animate-item">
                                 <span className="pub-journal">Journal of Cardiology</span>
-                                <h4>जटिल कोरोनरी इंटरवेंशन में प्रगति</h4>
+                                <h4>Advances in Complex Coronary Interventions</h4>
                                 <span className="pub-year">2024</span>
                             </div>
                             <div className="publication-item animate-item">
                                 <span className="pub-journal">Indian Heart Journal</span>
-                                <h4>हृदय रोग के लिए रोकथाम रणनीतियां</h4>
+                                <h4>Prevention Strategies for Cardiovascular Disease</h4>
                                 <span className="pub-year">2023</span>
                             </div>
                             <div className="publication-item animate-item">
                                 <span className="pub-journal">Circulation</span>
-                                <h4>उच्च जोखिम वाले रोगियों में नई स्टेंटिंग तकनीकें</h4>
+                                <h4>Novel Stenting Techniques in High-Risk Patients</h4>
                                 <span className="pub-year">2023</span>
                             </div>
                             <div className="publication-item animate-item">
@@ -1077,14 +1080,14 @@ function App() {
                 <div className="section-container">
                     <div className="contact-grid">
                         <div className="contact-info">
-                            <p className="section-label animate-item">संपर्क करें</p>
+                            <p className="section-label animate-item">Get in Touch</p>
                             <h2 className="section-title animate-item">
-                                अपॉइंटमेंट<br />
-                                <span className="highlight">बुक करें</span>
+                                Book an<br />
+                                <span className="highlight">Appointment</span>
                             </h2>
                             <p className="contact-text animate-item">
-                                विशेषज्ञ कार्डियक केयर और व्यक्तिगत उपचार योजनाओं के लिए
-                                डॉ. सुनदीप मिश्रा के साथ परामर्श शेड्यूल करें।
+                                Schedule a consultation with Dr. Sundeep Mishra for expert
+                                cardiac care and personalized treatment plans.
                             </p>
                             <div className="contact-details">
                                 <div className="contact-item animate-item">
@@ -1095,8 +1098,8 @@ function App() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <h4>हॉस्पिटल</h4>
-                                        <p>उजाला सिग्नस ब्राइटस्टार हॉस्पिटल, मुरादाबाद</p>
+                                        <h4>Hospital</h4>
+                                        <p>Ujala Cygnus Brightstar Hospital, Moradabad</p>
                                     </div>
                                 </div>
                                 <div className="contact-item animate-item">
@@ -1106,7 +1109,7 @@ function App() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <h4>फोन</h4>
+                                        <h4>Phone</h4>
                                         <p>+91-9871421390 / +91-9389808073</p>
                                     </div>
                                 </div>
@@ -1155,26 +1158,26 @@ function App() {
                 <div className="section-container">
                     <div className="footer-content">
                         <div className="footer-brand">
-                            <h3>डॉ. सुनदीप मिश्रा</h3>
-                            <p>कुलपति एवं इंटरवेंशनल कार्डियोलॉजिस्ट</p>
+                            <h3>Dr. Sundeep Mishra</h3>
+                            <p>Vice-Chancellor & Interventional Cardiologist</p>
                         </div>
                         <div className="footer-links">
                             <div className="footer-col">
-                                <h4>पृष्ठ</h4>
-                                <a href="#home">होम</a>
-                                <a href="#about">परिचय</a>
-                                <a href="#expertise">विशेषज्ञता</a>
-                                <a href="#achievements">उपलब्धियां</a>
+                                <h4>Pages</h4>
+                                <a href="#home">Home</a>
+                                <a href="#about">About</a>
+                                <a href="#expertise">Expertise</a>
+                                <a href="#achievements">Achievements</a>
                             </div>
                             <div className="footer-col">
-                                <h4>संपर्क</h4>
-                                <a href="#contact">अपॉइंटमेंट बुक करें</a>
-                                <a href="mailto:contact@drsundeepmishra.com">ईमेल</a>
+                                <h4>Contact</h4>
+                                <a href="#contact">Book Appointment</a>
+                                <a href="mailto:contact@drsundeepmishra.com">Email</a>
                             </div>
                         </div>
                     </div>
                     <div className="footer-bottom">
-                        <p>© 2024 डॉ. सुनदीप मिश्रा। सर्वाधिकार सुरक्षित।</p>
+                        <p>© 2024 Dr. Sundeep Mishra. All rights reserved.</p>
                     </div>
                 </div>
             </footer>
