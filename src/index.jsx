@@ -926,6 +926,10 @@ function App() {
                             <img src="./images/international-nigeria.png" alt="Dr. Mishra at Nigeria Business Council" />
                             <span className="gallery-caption">Nigeria Healthcare Summit</span>
                         </div>
+                        <div className="gallery-item">
+                            <img src="./images/leadership-csitv.png" alt="Dr. Mishra on CSI TV" />
+                            <span className="gallery-caption">CSI TV Medical Education</span>
+                        </div>
                     </div>
                     <div className="international-content">
                         <div className="international-roles animate-item">
