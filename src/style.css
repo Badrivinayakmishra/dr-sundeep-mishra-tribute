@@ -1112,6 +1112,21 @@ body {
     background: var(--bg-secondary);
 }
 
+.expertise-featured {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.expertise-featured img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 .expertise-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

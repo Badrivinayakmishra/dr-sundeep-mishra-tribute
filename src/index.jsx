@@ -692,8 +692,8 @@ function App() {
                                     techniques and patient care.
                                 </p>
                             </div>
-                            <div className="panel-visual">
-                                <div className="panel-shape shape-3 float-element"></div>
+                            <div className="panel-visual panel-image">
+                                <img src="./images/first-india-cathlab.png" alt="Dr. Mishra performing cardiac procedure" />
                             </div>
                         </div>
                         <div className="horizontal-panel">
@@ -804,6 +804,9 @@ function App() {
                             Areas of<br />
                             <span className="highlight">Specialization</span>
                         </h2>
+                    </div>
+                    <div className="expertise-featured animate-item">
+                        <img src="./images/specialization-procedure.png" alt="Dr. Mishra performing specialized cardiac procedure" />
                     </div>
                     <div className="expertise-grid">
                         <div className="expertise-card animate-item">
