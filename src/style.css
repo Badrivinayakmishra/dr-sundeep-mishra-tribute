@@ -281,6 +281,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 4rem;
     padding: 4rem;
     position: relative;
     background: var(--bg-primary);
@@ -339,6 +340,23 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
+}
+
+.panel-visual.panel-image {
+    position: relative;
+    width: 40%;
+    height: auto;
+    max-height: 80%;
+    border-radius: 20px;
+    overflow: hidden;
+    pointer-events: auto;
+}
+
+.panel-visual.panel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .panel-shape {
@@ -1963,6 +1981,8 @@ body {
         height: auto;
         min-height: 60vh;
         padding: 3rem 1.5rem;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .panel-number {
@@ -1983,6 +2003,12 @@ body {
     .panel-shape {
         transform: scale(0.4);
         opacity: 0.08;
+    }
+
+    .panel-visual.panel-image {
+        width: 80%;
+        max-width: 300px;
+        order: -1;
     }
 
     /* ============ MOBILE SECTIONS ============ */

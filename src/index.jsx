@@ -678,9 +678,8 @@ function App() {
                                     cardiac care globally.
                                 </p>
                             </div>
-                            <div className="panel-visual">
-                                <div className="panel-shape shape-1 float-element"></div>
-                                <div className="panel-shape shape-2 float-element"></div>
+                            <div className="panel-visual panel-image">
+                                <img src="./images/journey-casual.png" alt="Dr. Mishra - A Journey of Excellence" />
                             </div>
                         </div>
                         <div className="horizontal-panel panel-accent">
