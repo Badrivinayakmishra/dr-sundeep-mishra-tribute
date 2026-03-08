@@ -746,6 +746,9 @@ function App() {
                             <p>Interventional Cardiology, USA</p>
                         </div>
                     </div>
+                    <div className="education-featured animate-item">
+                        <img src="./images/education-interview.png" alt="Dr. Mishra - Health World Interview" />
+                    </div>
                 </div>
             </section>
 
@@ -790,6 +793,9 @@ function App() {
                             <h3>International Editor</h3>
                             <p>Sri Lanka Journal of Cardiology</p>
                         </div>
+                    </div>
+                    <div className="leadership-featured animate-item">
+                        <img src="./images/leadership-roles.png" alt="Dr. Mishra - International Leadership" />
                     </div>
                 </div>
             </section>
