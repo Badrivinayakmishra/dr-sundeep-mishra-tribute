@@ -1890,33 +1890,42 @@ body {
     }
 
     .nav-logo {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
-    /* ============ MOBILE HERO ============ */
+    /* ============ MOBILE HERO - COMPLETE OVERHAUL ============ */
     .hero-section {
-        min-height: 100svh;
-        display: flex;
-        flex-direction: column;
+        min-height: auto !important;
+        height: auto !important;
+        display: block;
+        padding-bottom: 2rem;
+    }
+
+    .hero-section::before,
+    .hero-section::after {
+        display: none;
     }
 
     .webgl-container {
-        position: relative;
-        height: 45vh;
-        min-height: 280px;
+        position: relative !important;
+        height: 50vh !important;
+        min-height: 300px;
+        max-height: 400px;
         width: 100%;
-        order: 1;
+        display: block;
+    }
+
+    .webgl-container canvas {
+        animation: none !important;
     }
 
     .hero-overlay {
-        position: relative;
-        width: 100%;
-        height: auto;
-        padding: 1.5rem 1.25rem 2rem;
-        background: var(--bg-primary);
-        align-items: flex-start;
-        order: 2;
-        flex: 1;
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        padding: 2rem 1.5rem 1rem !important;
+        background: var(--bg-primary) !important;
+        display: block !important;
     }
 
     .hero-content {
@@ -1925,30 +1934,38 @@ body {
     }
 
     .hero-subtitle {
-        font-size: 0.65rem;
-        letter-spacing: 0.1em;
-        line-height: 1.4;
+        font-size: 0.7rem;
+        letter-spacing: 0.08em;
+        line-height: 1.5;
+        margin-bottom: 0.75rem;
+        display: block;
     }
 
     .hero-title {
-        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        font-size: 2.25rem !important;
+        line-height: 1.1;
         margin-bottom: 1rem;
+    }
+
+    .hero-title .title-line {
+        display: block;
     }
 
     .hero-credentials {
-        gap: 0.35rem;
+        gap: 0.5rem;
         margin-bottom: 1rem;
+        flex-wrap: wrap;
     }
 
     .credential-badge {
-        padding: 0.3rem 0.6rem;
-        font-size: 0.6rem;
+        padding: 0.4rem 0.75rem;
+        font-size: 0.65rem;
     }
 
     .hero-description {
-        font-size: 0.85rem;
-        line-height: 1.6;
-        margin-bottom: 1.25rem;
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
     }
 
     .hero-cta {
@@ -1959,22 +1976,25 @@ body {
     .hero-cta .btn {
         width: 100%;
         justify-content: center;
-        padding: 0.875rem 1.25rem;
+        padding: 1rem 1.5rem;
+        font-size: 0.9rem;
     }
 
     .hero-stats {
-        position: relative;
-        left: auto;
-        bottom: auto;
-        gap: 1.5rem;
+        position: relative !important;
+        left: auto !important;
+        bottom: auto !important;
+        gap: 2rem;
         width: 100%;
-        justify-content: flex-start;
-        margin-top: 1.5rem;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background: var(--bg-secondary);
+        border-radius: 12px;
     }
 
     .stat-number {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 
     .stat-label {
@@ -1985,18 +2005,8 @@ body {
         display: none;
     }
 
-    .hero-title {
-        font-size: clamp(2rem, 10vw, 3rem);
-        margin-bottom: 0.75rem;
-    }
-
-    .hero-subtitle {
-        font-size: 0.75rem;
-        margin-bottom: 1rem;
-    }
-
     .hero-description {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         line-height: 1.6;
     }
 
@@ -2020,58 +2030,73 @@ body {
         flex: 0 0 auto;
         width: 100%;
         height: auto;
-        min-height: 60vh;
+        min-height: auto;
         padding: 3rem 1.5rem;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.5rem;
+    }
+
+    .panel-content {
+        text-align: center;
     }
 
     .panel-number {
-        font-size: 0.75rem;
-        margin-bottom: 1rem;
+        font-size: 0.7rem;
+        margin-bottom: 0.75rem;
     }
 
     .panel-title {
-        font-size: clamp(1.75rem, 7vw, 2.5rem);
+        font-size: 2rem;
         margin-bottom: 1rem;
     }
 
     .panel-text {
-        font-size: 0.95rem;
+        font-size: 1rem;
         line-height: 1.7;
     }
 
     .panel-shape {
-        transform: scale(0.4);
-        opacity: 0.08;
+        display: none;
     }
 
     .panel-visual.panel-image {
-        width: 80%;
-        max-width: 300px;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
         order: -1;
+        border-radius: 16px;
+    }
+
+    .panel-visual.panel-image img {
+        border-radius: 16px;
     }
 
     /* ============ MOBILE SECTIONS ============ */
     .section-container {
-        padding: 0 1rem;
+        padding: 0 1.25rem;
     }
 
     section {
-        padding: 4rem 0;
+        padding: 3.5rem 0;
     }
 
     .section-header {
         margin-bottom: 2rem;
+        text-align: center;
     }
 
     .section-label {
-        font-size: 0.65rem;
+        font-size: 0.7rem;
         margin-bottom: 0.5rem;
     }
 
     .section-title {
-        font-size: clamp(1.5rem, 6vw, 2rem);
+        font-size: 1.75rem;
+        line-height: 1.2;
+    }
+
+    .section-title .highlight {
+        display: inline;
     }
 
     /* ============ MOBILE ABOUT ============ */
@@ -2084,10 +2109,21 @@ body {
 
     .about-image {
         order: -1;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .about-content {
+        text-align: center;
     }
 
     .about-text {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    .about-highlights {
+        text-align: left;
     }
 
     .highlight-item {
