@@ -914,6 +914,20 @@ function App() {
                             <span className="highlight">Leadership</span>
                         </h2>
                     </div>
+                    <div className="international-gallery animate-item">
+                        <div className="gallery-item">
+                            <img src="./images/international-conference.png" alt="Dr. Mishra at international imaging conference" />
+                            <span className="gallery-caption">Imaging Conference Faculty</span>
+                        </div>
+                        <div className="gallery-item">
+                            <img src="./images/international-faculty.png" alt="Dr. Mishra with international colleague" />
+                            <span className="gallery-caption">Global Faculty Exchange</span>
+                        </div>
+                        <div className="gallery-item">
+                            <img src="./images/international-nigeria.png" alt="Dr. Mishra at Nigeria Business Council" />
+                            <span className="gallery-caption">Nigeria Healthcare Summit</span>
+                        </div>
+                    </div>
                     <div className="international-content">
                         <div className="international-roles animate-item">
                             <h3>Course Directorships</h3>

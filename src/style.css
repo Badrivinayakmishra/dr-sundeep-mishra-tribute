@@ -1267,6 +1267,43 @@ body {
     color: white;
 }
 
+.international-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 4/5;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 1rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
 .international-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1798,6 +1835,11 @@ body {
         min-height: 200px;
     }
 
+    .international-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
     .international-content {
         grid-template-columns: 1fr;
     }
@@ -2007,6 +2049,15 @@ body {
 
     .social-card.large {
         grid-column: span 1;
+    }
+
+    .international-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .gallery-item {
+        aspect-ratio: 3/4;
     }
 
     .expertise-card,
