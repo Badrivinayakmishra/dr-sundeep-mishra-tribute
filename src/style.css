@@ -1206,6 +1206,53 @@ body {
     color: var(--text-secondary);
 }
 
+/* Social cards with images */
+.social-card.with-image {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-card.with-image.large {
+    flex-direction: row;
+}
+
+.social-card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.social-card.with-image.large .social-card-image {
+    width: 45%;
+    height: auto;
+    min-height: 280px;
+}
+
+.social-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.social-card.with-image:hover .social-card-image img {
+    transform: scale(1.05);
+}
+
+.social-card-content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-card.with-image.large .social-card-content {
+    padding: 2rem;
+}
+
 /* ============ INTERNATIONAL SECTION ============ */
 .international-section {
     padding: 8rem 0;
@@ -1740,6 +1787,15 @@ body {
 
     .social-card.large {
         grid-column: span 1;
+    }
+
+    .social-card.with-image.large {
+        flex-direction: column;
+    }
+
+    .social-card.with-image.large .social-card-image {
+        width: 100%;
+        min-height: 200px;
     }
 
     .international-content {

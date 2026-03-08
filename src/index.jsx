@@ -861,14 +861,23 @@ function App() {
                         </h2>
                     </div>
                     <div className="social-grid">
-                        <div className="social-card large animate-item">
-                            <div className="social-icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                                    <path d="M19.5 12.572l-7.5 7.428-7.5-7.428A5 5 0 1 1 12 5.006a5 5 0 1 1 7.5 7.566z"/>
-                                </svg>
+                        <div className="social-card with-image large animate-item">
+                            <div className="social-card-image">
+                                <img src="./images/social-ladakh.png" alt="Dr. Mishra in Ladakh with Buddhist monk" />
                             </div>
-                            <h3>Ladakh Heart Foundation</h3>
-                            <p>Delivered cardiac care to isolated high-altitude communities. Successfully performed cardiac surgeries at 11,400 feet elevation in Leh, Ladakh - pioneering high-altitude cardiac procedures.</p>
+                            <div className="social-card-content">
+                                <h3>Ladakh Heart Foundation</h3>
+                                <p>Delivered cardiac care to isolated high-altitude communities. Successfully performed cardiac surgeries at 11,400 feet elevation in Leh, Ladakh - pioneering high-altitude cardiac procedures.</p>
+                            </div>
+                        </div>
+                        <div className="social-card with-image animate-item">
+                            <div className="social-card-image">
+                                <img src="./images/social-surgery.png" alt="Dr. Mishra performing surgery" />
+                            </div>
+                            <div className="social-card-content">
+                                <h3>Nepal Cath Lab</h3>
+                                <p>Established first catheterization laboratory in Nepal's public sector at Shahid Ganga Ram Hospital.</p>
+                            </div>
                         </div>
                         <div className="social-card animate-item">
                             <div className="social-icon">
@@ -890,16 +899,6 @@ function App() {
                             </div>
                             <h3>Rural Outreach</h3>
                             <p>Extended cardiac care across Mathura, Patna, Bilaspur, and Mahasamund, addressing health disparities.</p>
-                        </div>
-                        <div className="social-card animate-item">
-                            <div className="social-icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
-                                </svg>
-                            </div>
-                            <h3>Nepal Cath Lab</h3>
-                            <p>Established first catheterization laboratory in Nepal's public sector at Shahid Ganga Ram Hospital.</p>
                         </div>
                     </div>
                 </div>
