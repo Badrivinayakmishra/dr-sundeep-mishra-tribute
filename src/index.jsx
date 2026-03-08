@@ -706,9 +706,8 @@ function App() {
                                     cardiology worldwide.
                                 </p>
                             </div>
-                            <div className="panel-visual">
-                                <div className="panel-shape shape-4 float-element"></div>
-                                <div className="panel-shape shape-5 float-element"></div>
+                            <div className="panel-visual panel-image">
+                                <img src="./images/global-leadership.png" alt="Dr. Mishra at international conference" />
                             </div>
                         </div>
                     </div>
